@@ -38,7 +38,7 @@ public class MethodCall3 {
 
 			// paramType중에 Model이 있으면, 생성 & 저장 
 			if(paramType==Model.class) {
-				argArr[i] = model = new BindingAwareModelMap();  // model을 생성하는 메소드 
+				argArr[i] = model = new BindingAwareModelMap();  // BindingAwareModelMap()은 model을 생성하는 메소드 
 			} else if(value != null) {  // map에 paramName이 있으면,
 				// value와 parameter의 타입을 비교해서, 다르면 변환해서 저장  
 				argArr[i] = convertTo(value, paramType);				
